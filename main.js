@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import { cargarMapa } from './maps'
+import { pedirPictos } from './api-arasaac.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -23,3 +24,4 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter'))
 cargarMapa()
+pedirPictos('barco')
