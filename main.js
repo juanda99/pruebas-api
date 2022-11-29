@@ -1,8 +1,17 @@
+// TAREAS
+/*
+1. HACER UNA COMPILACIÓN Y VER QUE FUNCIONE
+2. PONER  UNA CAJA DE TEXTO, PARA BUSQUEDA DINÁMICA
+3. MOSTRAR LAS IMÁGENES (CONSULTAR API ARASAAC)
+4. DAR SUGERENCIAS DE BÚSQUEDA (ENDPOINT KEYWORDS EN api ARASAAC)
+
+*/
+
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import { cargarMapa } from './maps'
-import { pedirPictos } from './api-arasaac.js'
+import { pedirPictos, cargarKeywords } from './api-arasaac.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -25,3 +34,4 @@ document.querySelector('#app').innerHTML = `
 setupCounter(document.querySelector('#counter'))
 cargarMapa()
 pedirPictos('barco')
+cargarKeywords('es')
